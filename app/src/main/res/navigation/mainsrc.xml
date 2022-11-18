@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainsrc"
+    app:startDestination="@id/location">
+
+    <fragment
+        android:id="@+id/location"
+        android:name="com.example.myapplication.ProfileFragment"
+        android:label="Location"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/pictures"
+        android:name="com.example.myapplication.NotifFragment"
+        android:label="Pictures"
+        tools:layout="@layout/fragment_notif" />
+    <fragment
+        android:id="@+id/dec"
+        android:name="com.example.myapplication.descFragment"
+        android:label="deconnexion"
+        tools:layout="@layout/fragment_desc" />
+    <fragment
+        android:id="@+id/music"
+        android:name="com.example.myapplication.musicFragment"
+        android:label="Music"
+        tools:layout="@layout/fragment_music" />
+    <fragment
+        android:id="@+id/videos"
+        android:name="com.example.myapplication.videoFragment"
+        android:label="Videos"
+        tools:layout="@layout/fragment_video" />
+
+
+</navigation>

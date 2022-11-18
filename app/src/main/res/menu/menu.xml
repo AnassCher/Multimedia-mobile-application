@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:title="Location"
+        android:icon="@drawable/loca"
+        android:id="@+id/location"
+        />
+    <item
+        android:title="Pictures"
+        android:icon="@drawable/pics"
+        android:id="@+id/pictures"/>
+    <item
+        android:title="Music"
+        android:icon="@drawable/music"
+        android:id="@+id/music"/>
+    <item
+        android:title="Videos"
+        android:icon="@drawable/vedeo"
+        android:id="@+id/videos"/>
+
+    <item android:title="Others">
+        <menu>
+            <item
+                android:title="Settings"
+                android:icon="@drawable/setting"
+                android:id="@+id/settings"/>
+            <item
+                android:title="Support"
+                android:icon="@drawable/support"
+                android:id="@+id/support"/>
+            <item
+                android:title="About us"
+                android:icon="@drawable/about"
+                android:id="@+id/aboutUs"/>
+        </menu>
+    </item>
+    <group>
+    <item
+        android:title="Deconnexion"
+        android:icon="@drawable/dec"
+        android:id="@+id/dec"/>
+    </group>
+
+
+
+</menu>
