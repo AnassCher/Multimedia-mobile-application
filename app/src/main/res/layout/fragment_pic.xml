@@ -3,13 +3,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".NotifFragment">
+    tools:context=".PicFragment"
+    android:background="#d9dddc">
 
   <GridView
       android:layout_width="match_parent"
       android:layout_height="match_parent"
-      android:numColumns="3"
-      android:columnWidth="90dp"
+      android:numColumns="4"
+      android:horizontalSpacing="2dp"
+      android:verticalSpacing="2dp"
       android:gravity="center"
       android:id="@+id/gridview"
       />

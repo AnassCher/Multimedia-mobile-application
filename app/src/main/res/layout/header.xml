@@ -8,8 +8,8 @@
     android:background="#1e1e24">
     <com.makeramen.roundedimageview.RoundedImageView
         android:id="@+id/imageProf"
-        android:layout_height="70dp"
-        android:layout_width="70dp"
+        android:layout_height="75dp"
+        android:layout_width="75dp"
         android:scaleType="centerCrop"
         android:src="@drawable/prof"
         app:layout_constraintStart_toStartOf="parent"
@@ -30,6 +30,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
         android:text="Maya Domingez"
         android:textStyle="bold"
         android:textSize="18sp"

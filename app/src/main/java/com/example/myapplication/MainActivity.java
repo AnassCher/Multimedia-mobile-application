@@ -55,12 +55,7 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-        String j = null;
-        Bundle b = getIntent().getExtras();
-        if(b != null){
-             j = (String) b.getString("id");
-            Toast.makeText(getApplicationContext(), ""+j, Toast.LENGTH_SHORT).show();
-        }
+
 
 
 
@@ -78,8 +73,24 @@ public class MainActivity extends AppCompatActivity {
         NavigationView navi = findViewById(R.id.navigationView);
         navi.setItemIconTintList(null);
         View na = navi.getHeaderView(0);
-        name  = (TextView) na.findViewById(R.id.Username);
-        name.setText(j);
+
+        //change name and image of user
+        String j = null;
+        int i =0;
+        Bundle b = getIntent().getExtras();
+        if(b != null){
+            j = (String) b.getString("name");
+            //Toast.makeText(getApplicationContext(), ""+j, Toast.LENGTH_SHORT).show();
+            name  = (TextView) na.findViewById(R.id.Username);
+            name.setText(j);
+
+            i = (int) b.getInt("image");
+            userim = (ImageView) na.findViewById(R.id.imageProf);
+            userim.setImageResource(i);
+            userim.setScaleType(ImageView.ScaleType.FIT_XY);
+
+        }
+
 
 
         NavController nav = Navigation.findNavController(this, R.id.NavHostFragement);

@@ -63,9 +63,19 @@ public class login extends AppCompatActivity {
                         String s = h.getName();
 
                         Intent intent = new Intent(getApplicationContext(), MainActivity.class);
-                        intent.putExtra("id", s);
+                        intent.putExtra("name", s);
+                        //intent.putExtra("image",)
                         startActivity(intent);
                         Toast.makeText(getApplicationContext(),"Welcome Back "+h.getName(), Toast.LENGTH_SHORT).show();
+                    }}
+                 if (em.equals("Anass") && pas.equals("123")){
+                        Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                        intent.putExtra("name","Owner");
+                        intent.putExtra("image",R.drawable.me);
+
+                        startActivity(intent);
+                        Toast.makeText(getApplicationContext(),"Welcome Back "+em, Toast.LENGTH_SHORT).show();
+
                     }else{
                         Toast.makeText(getApplicationContext(),"erreur", Toast.LENGTH_SHORT).show();
                     }
@@ -74,7 +84,7 @@ public class login extends AppCompatActivity {
                 }
 
 
-            }
+
         });
         Button creeCompte = findViewById(R.id.cree);
         creeCompte.setOnClickListener(new View.OnClickListener() {
